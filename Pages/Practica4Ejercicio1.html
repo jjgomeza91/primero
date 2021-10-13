@@ -1,0 +1,108 @@
+<!--Notas y ejercicios practicos-->
+
+<!--Recordar que HTML se encarga de la estrucutura y el contenido, no de la presentación-->
+<!--HTML se basa en un sistema de etiquetas, las cuales unas son de apertura y otras de cierre, estas etiquetas tienen atributos y contenido. Los atributos se colocan en la etiqueta de apertura y el contenido se coloca entre la etiqueta de apertura y de cierre-->
+<!--Dentro de una etiqueta se pueden tener otras etiquetas-->
+<!--HTML tiene tres tipos de elementos que se pueden utilizar:
+   - Elementos estructurales que describen un proposito y no se encargan de especificar formato, por ejemplo: encabezados "<h1>...</h1>", parrafos "<p1>...</p1>"
+   - Elementos de presentación que indican la apariencia, aunque la gran mayoría de estos fueron asumidos por CSS, por ejemplo: Negrilla "<strong>...</strong>", Inclinado "<em>...</em>"
+   - Elementos de enlace que relacionan un documento permitiendo la construcción de hipertextos--->
+<!--Para realizar comentarios en el lenguaje HTML se utiliza el simbolo "<!-...."-->
+
+<!--Ejemplos:-->
+
+<!--Inicialmente se va a indicar que se va a trabajar con un documento tipo HTML-->
+<!DOCTYPE html>
+<!--Un atributo particular es colocar que tipo de lenguaje es aquel que se está utilizando en la página-->
+<html lang="es">
+
+    <!--Todo documento HTML tiene dos secciones, el encabezado (head) que se usa para establecer información común para la pagina y el cuerpo (body) donde se configuran las etiquetas que se muestran en el documento-->
+    <!--El encabezado tiene su etiqueta de apertura "<head>" y su etiqueta de cierre "</head>"-->
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--En la cabecera, con la etiqueta "title" se puede colocar cual es el nombre de la página, en este caso el nombre es "mi primer documento"-->
+        <title>Practica4Ejercicio1</title>
+    </head>
+
+
+    <!--En el cuerpo se va a colocar lo que se quiere que contenga la pagina-->
+    <!--El cuerpo tiene su etiqueta de apertura "<body>" y su etiqueta de cierre "</body>"-->
+    <body>
+        <!--Html permite que se escriba texto directamente por eso la palabra "Usuario" no se le coloca etiqueta a continuación, pero si se le coloca una etiqueta "label" funciona exactamente igual-->
+        Usuario
+        <input type='text' />
+        <!--La etiqueta br sirve para dar saltos de linea-->
+        <br/>
+        <!--Cada etiqueta en HTML va a tener lo siguiente: un elemento que es la misma etiqueta, por ejemplo "input", y a partir de allí se colocan atributos que son siempre un par: el atributo y el valor del atributo, por ejemplo "type" y ""-->
+        <!--Si no se recuerda que atributo se puede ayudar de la siguiente página web: https://www.htmlref.com/ -->
+        <!--Una etiqueta siempre comienza con el simbolo "<" y si no tiene etiqueta de cierre termina con el simbolo "/>", y si tiene etiqueta de cierre esta se coloca al final posterior al anterior simbolo mencionado-->
+        <!--El atributo "title" sirve para que aparezca un mensaje encima del botón cuando el cursor se coloque encima de él-->
+        <input type='button' value='enviar' title='Clic para enviar' />
+
+        <br/>
+        <!--Se desarrolla a continuación una etiqueta de selección-->
+
+        <Label for='Seleccione el cargo'><strong>Seleccione Rol</strong></Label>
+        <select name='Seleccione el cargo'>
+            <option value='0'>Seleccione</option>
+            <option value='1'>Scrum Master</option>
+            <option value='0'>Product Owner</option>
+            <option value='0'>Developer</option>
+        </select>
+        <br/>
+        <!--Se desarrolla a continuación una lista con diferentes enlaces para visitar-->
+        <label><u>Desea visitar</u></label>
+        <!--La etiqueta "ul" sirve para tener listas con items-->
+        <!--El atributo "target" permite especificar donde quiere el usuario que se despliegue la página a la que se está intentando acceder, si en una nueva ventana, si en un marco, o si se quiere reemplazar el contenido anterior-->
+        <ul>
+            <li><a href='https://www.uninorte.edu.co' target="_blank">Uninorte</a></li>
+            <li><a href='https://www.misiontic2022.gov.co' target="_blank">MisionTIC</a></li>
+        </ul>
+
+        <!--Se desarrolla a continuación una etiqueta calendario-->
+        <input type='date'/>
+        
+
+        <!--La etiqueta "ol" sirve para tener listas ordenadas-->
+        <!--El atributo "start" sirve para definir donde queremos que comience la lista-->
+        <ol start=10>
+            <li>José Gómez</li>
+            <li>Amparo Acosta</li>
+            <li>Lina Montiel</li>
+        </ol>
+
+
+        <!--La etiqueta "img" sirve para cargar imagenes y los atributos "widtg" / "height" sirven para definir el tamaño de la imagen-->
+        <!--El atributo "alt" sirve para cargar un texto por si la imagen llegase a fallar en la carga-->
+        <img src="imagenes/Html5.png" widtg=100 height=100 alt="html5">
+        <br>
+
+        <!--La etiqueta "table" sirve para realizar tablas en la página-->
+        <!--La etiqueta "th" sirve para realizar el encabezado de la tabla-->
+        <!--La etiqueta "tr" sirve para realizar las filas de la tabla-->
+        <!--La etiqueta "td" sirve para realizar las columnas de la tabla-->
+        <table>
+            <tr>
+                <th>Java</th>
+                <th>Python</th>
+                <th>Web</th>
+            </tr>
+            <tr>
+                <td>Me encantó</td>
+                <td>Quedé enamorado</td>
+                <td>Estoy fascinado</td>
+            </tr>
+            <tr>
+                <td>Me encantó</td>
+                <td>Quedé enamorado</td>
+                <td>Estoy fascinado</td>
+            </tr>
+        </table>
+
+
+
+
+    </body>
+</html>
